@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Student working on a laptop</title>
+  <desc id="desc">A simple illustration showing a student using a laptop at a desk.</desc>
+  <rect width="640" height="420" fill="#f4f8fb"/>
+  <rect x="70" y="285" width="500" height="34" rx="8" fill="#2f6fb0"/>
+  <rect x="238" y="118" width="164" height="160" rx="72" fill="#f0c7a5"/>
+  <path d="M248 150c24-66 137-46 145 18-36-29-79-27-145-18z" fill="#25364a"/>
+  <rect x="214" y="224" width="212" height="86" rx="28" fill="#3a9b62"/>
+  <rect x="176" y="210" width="288" height="98" rx="10" fill="#ffffff" stroke="#d6e2ee" stroke-width="6"/>
+  <rect x="202" y="232" width="236" height="50" rx="5" fill="#e9f1f8"/>
+  <circle cx="320" cy="256" r="10" fill="#2f6fb0"/>
+  <rect x="250" y="319" width="140" height="18" rx="8" fill="#25364a"/>
+  <circle cx="190" cy="126" r="36" fill="#c94545" opacity="0.9"/>
+  <circle cx="468" cy="138" r="34" fill="#2f6fb0" opacity="0.9"/>
+  <circle cx="494" cy="238" r="26" fill="#3a9b62" opacity="0.9"/>
+</svg>

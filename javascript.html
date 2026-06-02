@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Birat Pokhrel ePortfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body data-page="javascript.html">
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="index.html#home">
+            <span class="brand-icon">&lt;/&gt;</span> Birat.dev
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="fullstack.html">Full Stack</a></li>
+                <li class="nav-item"><a class="nav-link" href="html.html">HTML</a></li>
+                <li class="nav-item"><a class="nav-link" href="css.html">CSS</a></li>
+                <li class="nav-item"><a class="nav-link" href="bootstrap.html">Bootstrap</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript.html">JavaScript</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header class="topic-hero topic-hero-split">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-7"><p class="topic-kicker">Browser Interactivity</p><h1>JavaScript</h1><p>JavaScript adds behaviour to web pages. It can respond to events, validate forms, update content, and create interactive tools.</p></div>
+            <div class="col-lg-5"><div class="js-visual"><span>click</span><span>input</span><span>calculate</span><span>update DOM</span></div></div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="section-pad"><div class="container"><div class="row g-4">
+        <div class="col-lg-6"><div class="demo-box h-100"><h3 class="topic-card-title">Variables, Functions, and Events</h3><p>JavaScript stores values in variables, groups reusable code in functions, and runs code when events happen.</p><div class="code-box"><pre>var name = 'Birat';
+
+function greet() {
+  alert('Hello ' + name);
+}
+
+button.addEventListener('click', greet);</pre></div></div></div>
+        <div class="col-lg-6"><div class="demo-box h-100"><h3 class="topic-card-title">DOM Manipulation</h3><p>The DOM is the browser's version of the page. JavaScript can find elements and change their text, style, or classes.</p><div class="code-box"><pre>var title = document.getElementById('mainTitle');
+title.textContent = 'Updated heading';
+title.classList.add('active');</pre></div></div></div>
+        <div class="col-lg-6"><div class="demo-box h-100"><h3 class="topic-card-title">Calculator Demo</h3><div class="js-widget"><div class="calc-display" id="calcDisplay">0</div><div class="calc-grid"><button class="calc-btn calc-op" onclick="calcClear()">C</button><button class="calc-btn calc-op" onclick="calcSign()">+/-</button><button class="calc-btn calc-op" onclick="calcPercent()">%</button><button class="calc-btn calc-action" onclick="calcOp('/')">/</button><button class="calc-btn" onclick="calcNum('7')">7</button><button class="calc-btn" onclick="calcNum('8')">8</button><button class="calc-btn" onclick="calcNum('9')">9</button><button class="calc-btn calc-action" onclick="calcOp('*')">*</button><button class="calc-btn" onclick="calcNum('4')">4</button><button class="calc-btn" onclick="calcNum('5')">5</button><button class="calc-btn" onclick="calcNum('6')">6</button><button class="calc-btn calc-action" onclick="calcOp('-')">-</button><button class="calc-btn" onclick="calcNum('1')">1</button><button class="calc-btn" onclick="calcNum('2')">2</button><button class="calc-btn" onclick="calcNum('3')">3</button><button class="calc-btn calc-action" onclick="calcOp('+')">+</button><button class="calc-btn calc-zero" onclick="calcNum('0')">0</button><button class="calc-btn" onclick="calcDot()">.</button><button class="calc-btn calc-equals" onclick="calcEquals()">=</button></div></div></div></div>
+        <div class="col-lg-6"><div class="demo-box h-100"><h3 class="topic-card-title">Character Counter</h3><div class="js-widget"><textarea id="charArea" class="form-control mb-3" rows="5" maxlength="200" placeholder="Start typing here..." oninput="updateCharCount()"></textarea><div class="char-info-row d-flex justify-content-between"><span><span id="charNum">0</span> / 200 characters</span><span id="charPct">0%</span></div><div class="char-bar-track mt-2"><div class="char-bar-fill" id="charBarFill" style="width:0%"></div></div><p id="charMsg" class="small mt-2 text-muted mb-0">Start typing above...</p></div></div></div>
+    </div></div></section>
+
+    <section class="section-pad bg-alt"><div class="container"><h2 class="sec-title text-center">Validation Example</h2><p class="sec-sub text-center">Validation checks user input before a form is accepted.</p><div class="row justify-content-center"><div class="col-lg-7"><div class="demo-box"><form onsubmit="return runValidation();" id="valForm"><input type="text" id="valName" class="form-control form-control-sm mb-1" placeholder="Your name"><div class="val-err" id="valNameErr"></div><input type="text" id="valEmail" class="form-control form-control-sm mb-1" placeholder="Email address"><div class="val-err" id="valEmailErr"></div><input type="text" id="valAge" class="form-control form-control-sm mb-2" placeholder="Age (must be 16+)"><div class="val-err" id="valAgeErr"></div><button type="submit" class="btn btn-primary btn-sm w-100">Validate Form</button><div id="valSuccess" class="val-success mt-2"></div></form></div></div></div></div></section>
+</main>
+<footer class="site-footer">
+    <div class="container">
+        <div class="row g-4 mb-3">
+            <div class="col-md-5">
+                <h6 class="text-white fw-bold mb-2"><span class="brand-icon">&lt;/&gt;</span> Birat.dev</h6>
+                <p class="footer-muted small">First year Computing student learning web development step by step.</p>
+            </div>
+            <div class="col-md-3">
+                <h6 class="text-white fw-bold mb-2">Main</h6>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="index.html#home">Introduction</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h6 class="text-white fw-bold mb-2">Learning Pages</h6>
+                <ul class="list-unstyled footer-links footer-topic-grid">
+                    <li><a href="fullstack.html">Full Stack</a></li>
+                    <li><a href="html.html">HTML</a></li>
+                    <li><a href="css.html">CSS</a></li>
+                    <li><a href="bootstrap.html">Bootstrap</a></li>
+                    <li><a href="javascript.html">JavaScript</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr style="border-color:rgba(255,255,255,0.1);">
+        <p class="text-center footer-muted small mb-0">&copy; 2025 Birat Pokhrel - ePortfolio for Computing Studies</p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

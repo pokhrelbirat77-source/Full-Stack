@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Birat Pokhrel ePortfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body data-page="bootstrap.html">
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="index.html#home">
+            <span class="brand-icon">&lt;/&gt;</span> Birat.dev
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="fullstack.html">Full Stack</a></li>
+                <li class="nav-item"><a class="nav-link" href="html.html">HTML</a></li>
+                <li class="nav-item"><a class="nav-link" href="css.html">CSS</a></li>
+                <li class="nav-item"><a class="nav-link" href="bootstrap.html">Bootstrap</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript.html">JavaScript</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header class="topic-hero topic-hero-split">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-7"><p class="topic-kicker">Framework and Components</p><h1>Bootstrap</h1><p>Bootstrap is a CSS framework that provides ready-made layouts and components. It is useful for building neat responsive pages faster.</p></div>
+            <div class="col-lg-5"><div class="bootstrap-visual"><div class="row g-2"><div class="col-12"><span></span></div><div class="col-6"><span></span></div><div class="col-6"><span></span></div><div class="col-4"><span></span></div><div class="col-4"><span></span></div><div class="col-4"><span></span></div></div></div></div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="section-pad"><div class="container"><div class="row g-4">
+        <div class="col-lg-6"><div class="demo-box h-100"><h3 class="topic-card-title">Why Use Bootstrap?</h3><p>Bootstrap saves time by giving tested classes for grids, buttons, forms, navbars, alerts, and spacing. It also helps beginners make pages responsive without writing everything from zero.</p><ul class="clean-list"><li>Consistent layout</li><li>Mobile-first grid</li><li>Reusable components</li><li>Good documentation</li></ul></div></div>
+        <div class="col-lg-6"><div class="demo-box h-100"><h3 class="topic-card-title">Grid System</h3><p>The grid is based on 12 columns. A layout can be one column on mobile and multiple columns on desktop.</p><div class="row g-2 bs-grid-demo"><div class="col-12"><div class="gc">12 columns</div></div><div class="col-md-6"><div class="gc">6</div></div><div class="col-md-6"><div class="gc">6</div></div><div class="col-md-4"><div class="gc">4</div></div><div class="col-md-4"><div class="gc">4</div></div><div class="col-md-4"><div class="gc">4</div></div></div></div></div>
+        <div class="col-lg-6"><div class="demo-box h-100"><h3 class="topic-card-title">Components</h3><p>Components are ready-made interface parts. They improve speed and consistency when building pages.</p><div class="d-flex flex-wrap gap-2 mb-3"><button class="btn btn-primary">Primary</button><button class="btn btn-success">Success</button><button class="btn btn-warning">Warning</button><button class="btn btn-outline-secondary">Outline</button></div><div class="alert alert-info mb-0">This is a Bootstrap alert component.</div></div></div>
+        <div class="col-lg-6"><div class="demo-box h-100"><h3 class="topic-card-title">Form Styling</h3><p>Bootstrap form classes make inputs and labels align cleanly.</p><form class="row g-3"><div class="col-md-6"><label class="form-label">First Name</label><input class="form-control" placeholder="Birat"></div><div class="col-md-6"><label class="form-label">Course</label><select class="form-select"><option>Computing</option><option>Web Development</option></select></div><div class="col-12"><button type="button" class="btn btn-primary w-100">Submit Example</button></div></form></div></div>
+    </div></div></section>
+
+    <section class="section-pad bg-alt"><div class="container"><h2 class="sec-title text-center">Bootstrap Class Examples</h2><p class="sec-sub text-center">Bootstrap works by applying meaningful class names to HTML elements.</p><div class="code-box"><pre>&lt;div class="container"&gt;
+  &lt;div class="row g-4"&gt;
+    &lt;div class="col-md-6"&gt;Left&lt;/div&gt;
+    &lt;div class="col-md-6"&gt;Right&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre></div></div></section>
+</main>
+<footer class="site-footer">
+    <div class="container">
+        <div class="row g-4 mb-3">
+            <div class="col-md-5">
+                <h6 class="text-white fw-bold mb-2"><span class="brand-icon">&lt;/&gt;</span> Birat.dev</h6>
+                <p class="footer-muted small">First year Computing student learning web development step by step.</p>
+            </div>
+            <div class="col-md-3">
+                <h6 class="text-white fw-bold mb-2">Main</h6>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="index.html#home">Introduction</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h6 class="text-white fw-bold mb-2">Learning Pages</h6>
+                <ul class="list-unstyled footer-links footer-topic-grid">
+                    <li><a href="fullstack.html">Full Stack</a></li>
+                    <li><a href="html.html">HTML</a></li>
+                    <li><a href="css.html">CSS</a></li>
+                    <li><a href="bootstrap.html">Bootstrap</a></li>
+                    <li><a href="javascript.html">JavaScript</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr style="border-color:rgba(255,255,255,0.1);">
+        <p class="text-center footer-muted small mb-0">&copy; 2025 Birat Pokhrel - ePortfolio for Computing Studies</p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
