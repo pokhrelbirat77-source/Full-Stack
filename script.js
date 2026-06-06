@@ -372,3 +372,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+// Mobile navigation toggle used after switching from Bootstrap to Tailwind.
+document.addEventListener('DOMContentLoaded', function () {
+    var toggler = document.querySelector('.navbar-toggler');
+    var nav = document.getElementById('navLinks');
+    if (!toggler || !nav) return;
+    toggler.addEventListener('click', function () { nav.classList.toggle('show'); });
+});

@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Birat Pokhrel - ePortfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
@@ -22,7 +22,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navLinks">
+        <div class="navbar-collapse" id="navLinks">
             <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
                 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="fullstack.html">Full Stack</a></li>
@@ -65,15 +65,14 @@
                             <span class="ms-2 small" style="color:#888;">index.html</span>
                         </div>
                         <div class="code-window-body">
-<pre><span class="c-tag">&lt;html&gt;</span>
-  <span class="c-tag">&lt;head&gt;</span>
-    <span class="c-tag">&lt;title&gt;</span><span class="c-str">My Portfolio</span><span class="c-tag">&lt;/title&gt;</span>
-  <span class="c-tag">&lt;/head&gt;</span>
-  <span class="c-tag">&lt;body&gt;</span>
-    <span class="c-tag">&lt;h1&gt;</span><span class="c-str">Hello World!</span><span class="c-tag">&lt;/h1&gt;</span>
-    <span class="c-tag">&lt;p&gt;</span><span class="c-str">I'm learning to code</span><span class="c-tag">&lt;/p&gt;</span>
-  <span class="c-tag">&lt;/body&gt;</span>
-<span class="c-tag">&lt;/html&gt;</span></pre>
+<pre><span class="c-tag">&lt;main&gt;</span>
+  <span class="c-tag">&lt;section</span> <span class="c-attr">class=</span><span class="c-str">"welcome"</span><span class="c-tag">&gt;</span>
+    <span class="c-tag">&lt;p&gt;</span><span class="c-str">Welcome to my portfolio</span><span class="c-tag">&lt;/p&gt;</span>
+    <span class="c-tag">&lt;h1&gt;</span><span class="c-str">Birat Pokhrel</span><span class="c-tag">&lt;/h1&gt;</span>
+    <span class="c-tag">&lt;p&gt;</span><span class="c-str">I am learning HTML, CSS, Bootstrap and JavaScript.</span><span class="c-tag">&lt;/p&gt;</span>
+    <span class="c-tag">&lt;a</span> <span class="c-attr">href=</span><span class="c-str">"fullstack.html"</span><span class="c-tag">&gt;</span><span class="c-str">Start Learning</span><span class="c-tag">&lt;/a&gt;</span>
+  <span class="c-tag">&lt;/section&gt;</span>
+<span class="c-tag">&lt;/main&gt;</span></pre>
                         </div>
                     </div>
                 </div>
@@ -92,7 +91,7 @@
             <div class="col-md-4 col-lg"><a class="welcome-card" href="fullstack.html"><i class="fas fa-layer-group"></i><strong>Full Stack</strong><span>How frontend, backend, and database work together.</span></a></div>
             <div class="col-md-4 col-lg"><a class="welcome-card" href="html.html"><i class="fab fa-html5"></i><strong>HTML</strong><span>Structure, forms, tables, images, and semantic tags.</span></a></div>
             <div class="col-md-4 col-lg"><a class="welcome-card" href="css.html"><i class="fab fa-css3-alt"></i><strong>CSS</strong><span>Colours, layout, box model, and responsive design.</span></a></div>
-            <div class="col-md-6 col-lg"><a class="welcome-card" href="bootstrap.html"><i class="fab fa-bootstrap"></i><strong>Bootstrap</strong><span>Grid system and ready-made components.</span></a></div>
+            <div class="col-md-6 col-lg"><a class="welcome-card" href="bootstrap.html"><i class="fab fa-bootstrap"></i><strong>Bootstrap</strong><span>Components, grid system, and responsive layout.</span></a></div>
             <div class="col-md-6 col-lg"><a class="welcome-card" href="javascript.html"><i class="fab fa-js"></i><strong>JavaScript</strong><span>Events, DOM changes, validation, and small tools.</span></a></div>
         </div>
     </div>
@@ -130,8 +129,7 @@
         <p class="text-center footer-muted small mb-0">&copy; 2026 Birat Pokhrel - ePortfolio for Computer System Engineering</p>
     </div>
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
+
